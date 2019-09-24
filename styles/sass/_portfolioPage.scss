@@ -1,0 +1,138 @@
+.portfolioPage {
+    padding: 2rem .5rem;
+    .portfolioContent {
+        border-bottom: .15rem solid $accent;
+    }
+    .project5 {
+        border-bottom: none;
+    }
+    .portfolioImageContainer {
+        padding-top: 2rem;
+    }
+    p.portfolioDescription {
+        text-align: center;
+        font-size: .9rem;
+    }
+    h1 {
+        margin-bottom: 1rem;
+    }
+    h2 {
+        margin-bottom: .75rem;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+            flex-basis: 20%;
+            text-align: center;
+        }
+    }
+    ul.languagesUsed {
+        margin: 1rem 0;
+    }
+    .portfolioLinks {
+        margin-bottom: 1.5rem;
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .liveSite {
+            color: white;
+            background: $accent;
+            width: 8.5rem;
+            padding: .25rem .5rem;
+            border-radius: .25rem;
+            border: .1rem solid $accent;
+            transition: background ease .2s;
+            text-align: center;
+            &:hover,
+            &:focus {
+                background: $primaryDark;
+                transform: none;
+            }
+            &:active {
+                transform: scale(.95);
+            }
+        }
+    }
+    i {
+        font-size: 1.75rem;
+    }
+    i.external {
+        font-size: 1rem;
+    }
+}
+
+.project5 .portfolioLinks {
+    margin-bottom: 0;
+}
+
+@include media(900px) {
+    .portfolioPage {
+        padding-bottom: 0;
+        .portfolioContent {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 2.5rem 0;
+            .portfolioImageContainer,
+            .projectDetails {
+                flex-basis: 50%;
+            }
+            ul {
+                flex-basis: 100%;
+                margin-bottom: .25rem;
+                li {
+                    flex-basis: 12.5%;
+                }
+            }
+            .portfolioImageContainer {
+                align-self: center;
+            }
+            .portfolioLinks {
+                margin-bottom: 0;
+            }
+            .liveSite {
+                margin-left: .75rem;
+            }
+        }
+    }
+
+
+    .project1,
+    .project3,
+    .project5 {
+        h2,
+        p.portfolioDescription {
+            text-align: left;
+        }
+        ul {
+            justify-content: flex-start;
+        }
+    }
+
+    .project2,
+    .project4 {
+        .projectDetails {
+            order: -1;
+        }
+        h2,
+        p.portfolioDescription {
+            text-align: right;
+        }
+        ul {
+            justify-content: flex-end;
+            li {
+                text-align: right;
+            }
+        }
+    }
+}
+
+@include media(1050px) {
+    .portfolioContent {
+        align-items: center;
+    }
+}

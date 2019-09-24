@@ -1,0 +1,18 @@
+//color variables
+$primaryLight: #efe9b5;
+$primaryDark: #f4545d;
+$accent: #253769;
+
+@mixin generalButtonStyle {
+    border: none;
+    border-radius: .5rem;
+    padding: .25rem .5rem;
+    font-size: 1.25rem;
+    background: transparent;
+}
+
+@mixin media($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}

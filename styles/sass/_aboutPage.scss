@@ -1,0 +1,101 @@
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 80%;
+        border-radius: 50%;
+    }
+}
+
+.aboutMe {
+    padding: 2rem .5rem;
+    h1 {
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 1rem;
+    }
+    p.description {
+        text-align: center;
+    }
+}
+
+.mobileGap {
+    margin-top: 1.25rem;
+}
+
+@include media(600px) {
+    .aboutPage {
+        display: flex;
+        .imageContainer{
+            flex-basis: 45%;
+            align-self: center;
+            img {
+                width: 100%;
+            }
+        }
+        .aboutMe {
+            flex-basis: 50%;
+            position: relative;
+            h1 {
+                width: 150%;
+                position: relative;
+                left: -50%;
+            }
+            h2 {
+                position: relative;
+                width: 100%;
+                left: -25%;
+            }
+            p.description {
+                text-align: left;
+                margin-left: 1rem;
+                width: 115%;
+                position: relative;
+                left: -5%;
+            }
+        }
+    }
+    .mobileGap {
+        margin-top: 0;
+    }
+}
+
+@include media(800px) {
+    .aboutPage {
+        .imageContainer {
+            flex-basis: 50%;
+        }
+        .aboutMe {
+            h1,
+            h2,
+            li,
+            p.description {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@include media(1050px) {
+    .aboutPage {
+        .imageContainer{
+            padding-bottom: 2.5rem;
+        }
+        .aboutMe {
+            padding-top: 5rem;
+            h1 {
+                left: -30%;
+            }
+            h2 {
+                left: -7.5%;
+            }
+            p.description {
+                left: -2.5%;
+            }
+        }
+    }
+}

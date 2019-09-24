@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio website for Paul Andrews, Toronto based Web Developer">
+    <script src="https://kit.fontawesome.com/7bc83db579.js"></script>
+    <link type="image/png" href="./imagesAndIcons/portfolioFavicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Electrolize|Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Paul Andrews Portfolio</title>
+</head>
+<body>
+    <div class="maxContainer">
+        <div class="slideNav">
+            <ul class="mobile">
+                <li>
+                    <button class="exitResponsive mobileButton">
+                        <i class="fas fa-times"></i>
+                        <span class="sr-only">Exit toggle to remove full screen mobile nav</span>
+                    </button>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="#">
+                        <i class="fas fa-user-circle" aria-hidden="true"></i>
+                        <span class="sr-only">Link to About Me Page</span>
+                        About Me
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="portfolio.html">
+                        <i class="fas fa-tools" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Portfolio Page</span>
+                        Portfolio
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="skills.html">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Skills Page</span>
+                        Skills
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="contact.html">
+                        <i class="far fa-comments" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Contact Page</span>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <aside class="socialMedia">
+            <button class="chevron">
+                <i class="fas fa-chevron-circle-right right" aria-hidden="true"></i>
+                <span class="sr-only">Click to reveal social media menu</span>
+                <i class="fas fa-chevron-circle-left left hide" aria-hidden="true"></i>
+                <span class="sr-only hide">Click to hide social media menu</span>
+            </button>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/paulandrewsdev">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Twitter page</span>
+                </li>
+                <li>
+                    <a href="https://github.com/paul93andrews">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Git Hub page</span>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/paul93andrews/?hl=en">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Instagram page</span>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/paul-andrews-49b334185/">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Linked In page</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        
+        <div class="content wrapper headerGap">
+            <header class="wrapper">
+                <nav>
+                    <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    <ul class="headerNav">
+                        <li class="headerMenuItems">
+                            <a href="index.html" class="">
+                                About Me
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="#" class="currentPage">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <button class="hamburger mobileButton">
+                            <i class="fa fa-bars"></i>
+                            <span class="sr-only">Click to reveal mobile navigation menu</span>
+                        </button>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="skillsPage wrapper">
+                <section class="skills">
+                    <div class="skillsDetails">
+                        <h1>Skills</h1>
+                        <p class="skillsDescription">
+                            It takes a village to raise a web application, so they say. These are the skills that I've learned to raise my ideas into fully functional apps.
+                        </p>
+                    </div>
+                    <div class="skillsIcons">
+                        <ul class="skillsDirectory">
+                            <li>
+                                <i class="devicon-react-original accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">React Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-javascript-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Javascript Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-jquery-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">JQuery Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-html5-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">HTML 5 Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-sass-original accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Sass Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-css3-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">CSS Icon</span>
+                            </li>
+                            <li data-tooltip="Firebase">
+                                <i class="fas fa-universal-access accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Universal Access and Accessibility Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-nodejs-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Node JS Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Git Hub Icon</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-mobile-alt accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Responsive Design Icon</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        
+                <section class="futureSkills">
+                    <div class="skillDetails">
+                        <h2>To Learn Next</h2>
+                        <p class="skillsDescription">
+                            What I'm learning is central to who I am. Much like Web Development, it's always changing. Here's a list of what I hope to build proficency in next.
+                        </p>
+                    </div>
+                    <div class="futureSkillsIcons skillsIcons">
+                        <ul class="futureSkillsDirectory skillsDirectory">
+                            <li>
+                                <i class="devicon-vuejs-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Vue JS Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-typescript-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Type Script Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-ruby-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Ruby Icon</span>
+                            </li>
+                            <li>
+                                <i class="devicon-python-plain accentIcon" aria-hidden="true"></i>
+                                <span class="sr-only">Python Icon</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    
+    
+        <aside class="funIcon">
+            <i class="far fa-smile" aria-hidden="true"></i>
+            <span class="sr-only">Fun icon showing personality</span>
+        </aside>
+    
+        <footer>
+            <p>Developed by Paul Andrews</p>
+        </footer>
+    </div>
+</body>
+
+<script src="/scripts/script.js"></script>
+<script type="text/javascript" src="./scripts/script.js"></script>
+</html>

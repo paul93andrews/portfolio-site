@@ -1,0 +1,164 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background: $primaryDark;
+}
+
+footer {
+    text-align: center;
+    color: black;
+}
+
+h1, 
+h2, 
+p, 
+ul, 
+li { 
+    margin: 0; 
+    padding:0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h1, 
+h2 {
+    // font-family: 'Space Mono', monospace;
+    font-family: 'Electrolize', sans-serif;
+}
+
+h2 {
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1.56rem;
+}
+
+p,
+li,
+input::placeholder {
+    font-size: .925rem;
+    line-height: 1.6rem;
+    letter-spacing: .125rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+// general class properties
+.maxContainer {
+    max-width: 2500px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: $primaryLight;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 5px #951920e6;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1500px;
+}
+
+.headerGap {
+    margin-top: 1.25rem;
+}
+
+.funIcon {
+    display: none;
+}
+
+.accentIcon {
+    color: $primaryDark;
+}
+
+// screen reader accessibility links properties
+.skip-link {
+    position: absolute;
+    left: -1000rem;
+    top: .25rem;
+    z-index: 10;
+    // background: $primaryBright;
+    color: black;
+    padding: 1rem;
+}
+
+.skip-link:focus {
+    left: 50%;
+}
+
+//some general hover states 
+button,
+a {
+    transition: transform linear .2s;
+}
+
+button:hover,
+button:focus,
+a:hover,
+a:focus {
+    transform: scale(1.2);
+}
+
+button:focus,
+a:focus {
+    outline: .15rem dotted red;
+}
+
+@include media(800px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .funIcon {
+        display: block;
+        position: fixed;
+        top: 50%;
+        bottom: 50%;
+        right: 2%;
+        i {
+            transform: rotate(270deg);
+            font-size: 1.5rem;
+            color: black;
+        }
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+}
+
+@include media(1050px) {
+    .content {
+        box-shadow: 0px 3px 18px 8px #951920e6;
+    }
+    .funIcon {
+        right: 2.5%;
+    }
+}

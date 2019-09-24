@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio website for Paul Andrews, Toronto based Web Developer">
+    <script src="https://kit.fontawesome.com/7bc83db579.js"></script>
+    <link type="image/png" href="./imagesAndIcons/portfolioFavicon.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Electrolize|Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Paul Andrews - Web Developer</title>
+</head>
+<body>
+    <div class="maxContainer">
+        <div class="slideNav">
+            <ul class="mobile">
+                <li>
+                    <button class="exitResponsive mobileButton">
+                        <i class="fas fa-times"></i>
+                        <span class="sr-only">Exit toggle to remove full screen mobile nav</span>
+                    </button>
+                </li>
+                <li class="headerMenuItems currentPage">
+                    <a href="index.html">
+                        <i class="fas fa-user-circle" aria-hidden="true"></i>
+                        <span class="sr-only">Link to About Me Page</span>
+                        About Me
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="portfolio.html">
+                        <i class="fas fa-tools" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Portfolio Page</span>
+                        Portfolio
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="skills.html">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Skills Page</span>
+                        Skills
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="#">
+                        <i class="far fa-comments" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Contact Page</span>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <aside class="socialMedia">
+            <button class="chevron">
+                <i class="fas fa-chevron-circle-right right" aria-hidden="true"></i>
+                <span class="sr-only">Click to reveal social media menu</span>
+                <i class="fas fa-chevron-circle-left left hide" aria-hidden="true"></i>
+                <span class="sr-only hide">Click to hide social media menu</span>
+            </button>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/paulandrewsdev">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Twitter page</span>
+                </li>
+                <li>
+                    <a href="https://github.com/paul93andrews">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Git Hub page</span>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/paul93andrews/?hl=en">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Instagram page</span>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/paul-andrews-49b334185/">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Linked In page</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        
+        <div class="content wrapper headerGap">
+            <header class="wrapper">
+                <nav>
+                    <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    <ul class="headerNav">
+                        <li class="headerMenuItems">
+                            <a href="index.html" class="">
+                                About Me
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="skills.html">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="#" class="currentPage">
+                                Contact
+                            </a>
+                        </li>
+                        <button class="hamburger mobileButton">
+                            <i class="fa fa-bars"></i>
+                            <span class="sr-only">Click to reveal mobile navigation menu</span>
+                        </button>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main class="contactPage wrapper">
+                <h1>Let's Get in Touch</h1>
+                <p class="contactDetails">
+                    If you want to collaborate on a project or reach out with a general inquiry, don't hesitate to get in touch. I look forward to creating a better internet together!
+                </p>
+                <ul>
+                    <li>paulandrews810@gmail.com</li>
+                </ul>
+                <form action="https://formspree.io/paulandrews810@gmail.com" method="POST" name="contact-form" class="contactForm validate" id="form">
+                    <fieldset class="userInfo">
+                        <div>
+                            <label for="name" class="visuallyHidden">Write your Name below</label>
+                            <input type="text" name="name" class="validate" id="name" placeholder=" Name" required data-value-missing=”Translate(‘Required’)”>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="visuallyHidden">Write your Email below</label>
+                            <input required type="text" class="validate" name="email" id="email" placeholder=" Email Address" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
+                            data-value-missing=”Translate(‘Required’)”
+                            data-pattern-mismatch=”Translate(‘Invalid credit card’)”>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="textArea">
+                        <textarea required name="userFeedback" class="validate" id="feedback" cols="30" rows="10" minlength="5" placeholder="Comment"></textarea>
+                    </fieldset>
+                    
+                    <label for="submit" class="visuallyHidden">Click the submit button to send me your message</label>
+                    <input type="submit" name="submit" id="submit" class="submit-button" value="Submit">
+                </form>
+            </main>
+        </div>
+    
+    
+        <aside class="funIcon">
+            <i class="far fa-smile" aria-hidden="true"></i>
+            <span class="sr-only">Fun icon showing personality</span>
+        </aside>
+    
+        <footer>
+            <p>Developed by Paul Andrews</p>
+        </footer>
+    </div>
+</body>
+
+<script src="/scripts/script.js"></script>
+<script type="text/javascript" src="./scripts/script.js"></script>
+</html>

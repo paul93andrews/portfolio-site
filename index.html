@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio website for Paul Andrews, Toronto based Web Developer">
+    <meta name="keywords" content="HTML,CSS,SCSS,XML,JavaScript,React,Front-End Web Developer,Development,Toronto,Canada,Tech,Ottawa,Montreal,Accessibility,Responsive Design">
+    <script src="https://kit.fontawesome.com/7bc83db579.js"></script>
+    <link type="image/png" href="./imagesAndIcons/portfolioFavicon.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Electrolize|Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Paul Andrews - Web Developer</title>
+</head>
+<body>
+    <div class="maxContainer">
+        <div class="slideNav">
+            <ul class="mobile">
+                <li>
+                    <button class="exitResponsive mobileButton">
+                        <i class="fas fa-times"></i>
+                        <span class="sr-only">Exit toggle to remove full screen mobile nav</span>
+                    </button>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="#" class="currentPage">
+                        <i class="fas fa-user-circle" aria-hidden="true"></i>
+                        <span class="sr-only">Link to About Me Page</span>
+                        About Me
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="portfolio.html">
+                        <i class="fas fa-tools" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Portfolio Page</span>
+                        Portfolio
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="skills.html">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Skills Page</span>
+                        Skills
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="contact.html">
+                        <i class="far fa-comments" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Contact Page</span>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <aside class="socialMedia">
+            <button class="chevron">
+                <i class="fas fa-chevron-circle-right right" aria-hidden="true"></i>
+                <span class="sr-only">Click to reveal social media menu</span>
+                <i class="fas fa-chevron-circle-left left hide" aria-hidden="true"></i>
+                <span class="sr-only hide">Click to hide social media menu</span>
+            </button>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/paulandrewsdev">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Twitter page</span>
+                </li>
+                <li>
+                    <a href="https://github.com/paul93andrews">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Git Hub page</span>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/paul93andrews/?hl=en">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Instagram page</span>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/paul-andrews-49b334185/">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Linked In page</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content wrapper mobileGap">
+            <header class="wrapper">
+                <nav>
+                    <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    <ul class="headerNav">
+                        <li class="headerMenuItems">
+                            <a href="#" class="currentPage">
+                                About Me
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="skills.html">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <button class="hamburger mobileButton">
+                            <i class="fa fa-bars"></i>
+                            <span class="sr-only">Click to reveal mobile navigation menu</span>
+                        </button>
+                    </ul>
+                </nav>
+            </header>
+    
+            <main class="aboutPage wrapper">
+                <div class="imageContainer">
+                    <img src="./imagesAndIcons/headshot-4-porftolio.png" alt="Personal Image">
+                </div>
+        
+                <section class="aboutMe">
+                    <h1>Paul Andrews</h1>
+                    <div id="identity">
+                        <h2>Web Developer</h2>
+                        <h2>Educator</h2>
+                        <h2>Foodie</h2>
+                        <h2>Camper</h2>
+                        <h2>Geek</h2>
+                    </div>
+                    <h2><span id="typed"></span></h2>
+                    <p class="description">
+                        I'm a Front-End Web Developer that cares deeply about people and the products they engage with. It's what we create and who we create for that matter the most. When I'm not making my mark on the web, you can find me exploring nature or pursuing my next passion. Take a look around and hopefully we can build something together!
+                    </p>
+                </section>
+            </main>
+
+            <aside class="funIcon">
+                <i class="far fa-smile" aria-hidden="true"></i>
+                <span class="sr-only">Fun icon showing personality</span>
+            </aside>
+        </div>
+        
+    
+        <footer>
+            <p>Developed by Paul Andrews</p>
+        </footer>
+    </div>
+</body>
+
+<script src="/scripts/script.js"></script>
+<script type="text/javascript" src="./scripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="./scripts/typed.js"></script>
+</html>

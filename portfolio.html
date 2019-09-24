@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio website for Paul Andrews, Toronto based Web Developer">
+    <script src="https://kit.fontawesome.com/7bc83db579.js"></script>
+    <link type="image/png" href="./imagesAndIcons/portfolioFavicon.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Electrolize|Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Paul Andrews - Web Developer</title>
+</head>
+<body>
+    <div class="maxContainer">
+        <div class="slideNav">
+            <ul class="mobile">
+                <li>
+                    <button class="exitResponsive mobileButton">
+                        <i class="fas fa-times"></i>
+                        <span class="sr-only">Exit toggle to remove full screen mobile nav</span>
+                    </button>
+                </li>
+                <li class="headerMenuItems currentPage">
+                    <a href="index.html">
+                        <i class="fas fa-user-circle" aria-hidden="true"></i>
+                        <span class="sr-only">Link to About Me Page</span>
+                        About Me
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="#">
+                        <i class="fas fa-tools" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Portfolio Page</span>
+                        Portfolio
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="skills.html">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Skills Page</span>
+                        Skills
+                    </a>
+                </li>
+                <li class="headerMenuItems">
+                    <a href="contact.html">
+                        <i class="far fa-comments" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Contact Page</span>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        
+        <aside class="socialMedia">
+            <button class="chevron">
+                <i class="fas fa-chevron-circle-right right" aria-hidden="true"></i>
+                <span class="sr-only">Click to reveal social media menu</span>
+                <i class="fas fa-chevron-circle-left left hide" aria-hidden="true"></i>
+                <span class="sr-only hide">Click to hide social media menu</span>
+            </button>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/paulandrewsdev">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Twitter page</span>
+                </li>
+                <li>
+                    <a href="https://github.com/paul93andrews">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Git Hub page</span>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/paul93andrews/?hl=en">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <span class="sr-only">Link to Instagram page</span>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/paul-andrews-49b334185/">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Linked In page</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        
+        <div class="content wrapper headerGap">
+            <header class="wrapper">
+                <nav>
+                    <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    <ul class="headerNav">
+                        <li class="headerMenuItems">
+                            <a href="index.html" class="">
+                                About Me
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="#" class="currentPage">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="skills.html">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="headerMenuItems">
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <button class="hamburger mobileButton">
+                            <i class="fa fa-bars"></i>
+                            <span class="sr-only">Click to reveal mobile navigation menu</span>
+                        </button>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="portfolioPage wrapper">
+                <h1>My Work</h1>
+                <p>Included here is a collection of chosen work I've designed and developed. Each portfolio piece includes a link to its GitHub repository and live site to play around with it.</p>
+                <section class="portfolio">
+                    <section class="portfolioContent project1">
+                        <div class="portfolioImageContainer wow slideInLeft">
+                            <img src="./imagesAndIcons/project-5-display.png" alt="Image of portfolio piece within computer">
+                        </div>
+                        <div class="projectDetails wow slideInRight">
+                            <h2>Chat with Yoda</h2>
+                            <p class="portfolioDescription">
+                                I've always sought the kind of advice a Jedi Master could provide. So I created a chat bot that does just that. It was created using React and adheres to responsive design and accessibility principles. The app also uses Firebase to persist users' chat with Yoda and enable authentication.
+                            </p>
+                            <ul class="languagesUsed">
+                                <li class="languageIconSmall">
+                                    <i class="devicon-react-original accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">React Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-html5-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">HTML 5 Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-sass-original accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Sass Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="fas fa-mobile-alt accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Responsive Design Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-javascript-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Javascript Icon</span>
+                                </li>
+                            </ul>
+                            <ul class="portfolioLinks">
+                                <li>
+                                    <a href="https://github.com/paul93andrews/project5" target="external">
+                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                        <span class="sr-only">Git Hub Icon</span>
+                                    </a>
+                                </li>
+                                <li><a href="https://project5-redo.firebaseapp.com/" class="liveSite" target="external">
+                                    See it Live
+                                    <i class="fas fa-external-link-alt external"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </section>
+        
+                    <section class="portfolioContent project2">
+                        <div class="portfolioImageContainer wow slideInRight">
+                            <img src="./imagesAndIcons/project-4-display.png" alt="Image of portfolio piece within computer">
+                        </div>
+                        <div class="projectDetails wow slideInLeft">
+                            <h2>Have you Heard This?</h2>
+                            <p class="portfolioDescription">
+                                Collaborated with a colleague to create this JQuery application. As we are both huge podcast fans, a project that enables users to explore new ones was useful for us both. The application adheres to responsive design and accessibility principles, searching a RESTful API for randomly generated podcasts given users preferences.
+                            </p>
+                            <ul class="languagesUsed">
+                                <li class="languageIconSmall">
+                                    <i class="devicon-jquery-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">JQuery Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-html5-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">HTML 5 Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-sass-original accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Sass Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="fas fa-mobile-alt accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Responsive Design Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-javascript-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Javascript Icon</span>
+                                </li>
+                            </ul>
+                            <ul class="portfolioLinks">
+                                <li>
+                                    <a href="https://github.com/Gabe-and-Paul/gabePaulProject4" target="external">
+                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                        <span class="sr-only">Git Hub Icon</span>
+                                    </a>
+                                </li>
+                                <li><a href="https://gabe-and-paul.github.io/gabePaulProject4/" class="liveSite accentIcon" target="external">
+                                    See it Live
+                                    <i class="fas fa-external-link-alt external"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </section>
+        
+                    <section class="portfolioContent project3">
+                        <div class="portfolioImageContainer wow slideInLeft">
+                            <img src="./imagesAndIcons/project-6-display.png" alt="Image of portfolio piece within computer">
+                        </div>
+                        <div class="projectDetails wow slideInRight">
+                            <h2>MakeApp</h2>
+                            <p class="portfolioDescription">
+                                Makeup cosmetics might not be my sort of thing, but online shopping is. This React app was created collaboratively and gives users an e-commerce experience. The application adheres to responsive design and accessibility principles, searching a RESTful API for makeup product details and giving users the option to store favourites to a Firebase database.
+                            </p>
+                            <ul class="languagesUsed">
+                                <li class="languageIconSmall">
+                                    <i class="devicon-react-original accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">React Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-html5-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">HTML 5 Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-sass-original accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Sass Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="fas fa-mobile-alt accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Responsive Design Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-javascript-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Javascript Icon</span>
+                                </li>
+                            </ul>
+                            <ul class="portfolioLinks">
+                                <li>
+                                    <a href="https://github.com/Mob-Eit/makeThisUp" target="external">
+                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                        <span class="sr-only">Git Hub Icon</span>
+                                    </a>
+                                </li>
+                                <li><a href="https://makeupyourmind-e0283.firebaseapp.com/" class="liveSite" target="external">
+                                    See it Live
+                                    <i class="fas fa-external-link-alt external"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </section>
+        
+                    <section class="portfolioContent project4">
+                        <div class="portfolioImageContainer wow slideInRight">
+                            <img src="./imagesAndIcons/project-1-display.png" alt="Image of portfolio piece within computer">
+                        </div>
+                        <div class="projectDetails wow slideInLeft">
+                            <h2>Client PSD Conversion</h2>
+                            <p class="portfolioDescription">
+                                Who doesn't love shopping for furniture? HTML5, SCSS, and Javascript brought this PSD to life on the web. The final product adheres to responsive design and accessibility principles.
+                            </p>
+                            <ul class="languagesUsed">
+                                <li class="languageIconSmall">
+                                    <i class="devicon-html5-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">HTML 5 Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-sass-original accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Sass Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="fas fa-mobile-alt accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Responsive Design Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-javascript-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Javascript Icon</span>
+                                </li>
+                            </ul>
+                            <ul class="portfolioLinks">
+                                <li>
+                                    <a href="https://github.com/paul93andrews/paul-andrews-project-two" target="external">
+                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                        <span class="sr-only">Git Hub Icon</span>
+                                    </a>
+                                </li>
+                                <li><a href="https://paul93andrews.github.io/paul-andrews-project-two/index.html" class="liveSite" target="external">
+                                    See it Live
+                                    <i class="fas fa-external-link-alt external"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </section>
+        
+                    <section class="portfolioContent project5">
+                        <div class="portfolioImageContainer wow slideInLeft">
+                            <img src="./imagesAndIcons/project-3-display.png" alt="Image of portfolio piece within computer">
+                        </div>
+                        <div class="projectDetails wow slideInRight">
+                            <h2>Who do you Beleaf You Are?</h2>
+                            <p class="portfolioDescription">
+                                Born in the Greater Toronto Area means I'm a born Toronto Maple Leafs fan. I've seen fans of all types and often wondered how to classify Leafs Nation. This application uses JQuery to do just that. Users take a quiz that follows responsive design and accessibility principles to find out what kind of fan they are. 
+                            </p>
+                            <ul class="languagesUsed">
+                                <li class="languageIconSmall">
+                                    <i class="devicon-jquery-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">JQuery Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-html5-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">HTML 5 Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-sass-original accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Sass Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="fas fa-mobile-alt accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Responsive Design Icon</span>
+                                </li>
+                                <li class="languageIconSmall">
+                                    <i class="devicon-javascript-plain accentIcon" aria-hidden="true"></i>
+                                    <span class="sr-only">Javascript Icon</span>
+                                </li>
+                            </ul>
+                            <ul class="portfolioLinks">
+                                <li>
+                                    <a href="https://github.com/paul93andrews/project3PaulAndrews" target="external">
+                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                        <span class="sr-only">Git Hub Icon</span>
+                                    </a>
+                                </li>
+                                <li><a href="https://paul93andrews.github.io/project3PaulAndrews/" class="liveSite" target="external">
+                                    See it Live
+                                    <i class="fas fa-external-link-alt external"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+            </main>
+        </div>
+    
+        <aside class="funIcon">
+            <i class="far fa-smile" aria-hidden="true"></i>
+            <span class="sr-only">Fun icon showing personality</span>
+        </aside>
+    
+        <footer>
+            <p>Developed by Paul Andrews</p>
+        </footer>
+    </div>
+</body>
+
+<script src="/scripts/script.js"></script>
+<script type="text/javascript" src="./scripts/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+</html>

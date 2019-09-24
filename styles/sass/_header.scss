@@ -1,0 +1,122 @@
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.25rem;
+        position: relative;
+        padding-top: .25rem;
+        img {
+            width: 20%;
+            flex-shrink: 0;
+            height: auto;
+            position: relative;
+            top: 11%;
+            left: 9%;
+        }
+    }
+}
+
+.slideNav {
+    background: $accent;
+    display: block;
+    position: fixed;
+    top: -1000%;
+    width: 100%;
+    min-height: 100vh;
+    transition: all ease-out 0.4s; 
+    z-index: 10;
+    a:hover,
+    a:focus {
+        color: $primaryLight;
+        transform: scale(.9);
+    }
+    li:first-of-type {
+        margin-top: 1.5rem;
+    }
+    li {
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        a {
+            color: white;
+        }
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.show {
+    top: 0%;
+}
+
+.hamburger {
+    position: fixed;
+    right: 9%;
+    top: 5%;
+    color: $accent;
+    @include generalButtonStyle;
+}
+
+.exitResponsive {
+    background: transparent;
+    color: white;
+    @include generalButtonStyle;
+}
+
+ul.mobile,
+ul.headerNav {
+    text-align: center;
+}
+
+ul.headerNav .headerMenuItems {
+    display: none;
+}
+
+.headerMenuItems a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@include media(600px) {
+    .slideNav,
+    .hamburger {
+        display: none;
+    }
+
+    ul.headerNav {
+        display: flex;
+        justify-content: space-between;
+        width: 20rem;
+        flex-shrink: 0;
+        .headerMenuItems {
+            display: block;
+            padding-left: 1rem;
+            padding-top: .4rem;
+            a {
+                color: black;
+                font-size: .865rem;
+            }
+        }
+    }
+
+    ul.headerNav .headerMenuItems a.currentPage {
+        color: $primaryDark;
+    }
+
+    header nav {
+        img {
+            width: 10%;
+            top: 0;
+            left: 1.5%;
+        }
+    }
+}
+
+@include media(800px) {
+    header nav {
+        img {
+            left: 0%;
+        }
+    }
+}
