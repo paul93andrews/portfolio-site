@@ -1002,6 +1002,16 @@ ul.headerNav .headerMenuItems {
   color: red;
 }
 
+.contactPage fieldset div {
+  position: relative;
+}
+
+.contactPage fieldset div .nameLabel {
+  position: absolute;
+  left: 2%;
+  top: 12%;
+}
+
 .contactForm {
   text-align: center;
 }

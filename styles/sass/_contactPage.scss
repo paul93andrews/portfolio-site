@@ -24,6 +24,15 @@
         bottom: 1.5rem;
         color: red;
     }
+
+    fieldset div {
+        position: relative;
+        .nameLabel {
+            position: absolute;
+            left: 2%;
+            top: 12%;
+        }
+    }
 }
 
 .contactForm {
