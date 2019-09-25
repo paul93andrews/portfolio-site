@@ -17,6 +17,7 @@
 <body>
     <div class="maxContainer">
         <div class="slideNav">
+            <!-- navigation available only on mobile through hamburger menu touch -->
             <ul class="mobile">
                 <li>
                     <button class="exitResponsive mobileButton">
@@ -55,9 +56,8 @@
             </ul>
         </div>
 
-        
-        
         <aside class="socialMedia">
+            <!-- social media navigation that is accessed via touch on mobile and visible on desktop -->
             <button class="chevron">
                 <i class="fas fa-chevron-circle-right right" aria-hidden="true"></i>
                 <span class="sr-only">Click to reveal social media menu</span>
@@ -93,9 +93,12 @@
         </aside>
         
         <div class="content wrapper headerGap">
+            <!-- wrapper above constrains everything to the card appearance on the main page  -->
             <header class="wrapper">
                 <nav>
-                    <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    <a href="index.html" class="professionalLogo">
+                        <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    </a>
                     <ul class="headerNav">
                         <li class="headerMenuItems">
                             <a href="index.html" class="">
@@ -126,17 +129,21 @@
             </header>
 
             <main class="portfolioPage wrapper">
+                <!-- introduction to section  -->
                 <h1>My Work</h1>
                 <p>Included here is a collection of chosen work I've designed and developed. Each portfolio piece includes a link to its GitHub repository and live site to play around with it.</p>
                 <section class="portfolio">
+                    <!-- each section follows the same format as this one, there are five of them -->
                     <section class="portfolioContent project1">
                         <div class="portfolioImageContainer wow slideInLeft">
-                            <img src="./imagesAndIcons/project-5-display.png" alt="Image of portfolio piece within computer">
+                            <a href="https://project5-redo.firebaseapp.com/" target="external">
+                                <img src="./imagesAndIcons/project-5-display.png" alt="Image of portfolio piece within computer">
+                            </a>
                         </div>
                         <div class="projectDetails wow slideInRight">
                             <h2>Chat with Yoda</h2>
                             <p class="portfolioDescription">
-                                I've always sought the kind of advice a Jedi Master could provide. So I created a chat bot that does just that. It was created using React and adheres to responsive design and accessibility principles. The app also uses Firebase to persist users' chat with Yoda and enable authentication.
+                                I've always sought the kind of advice a Jedi Master could provide. So I created a chat bot that does just that. It uses React and adheres to responsive design and accessibility principles. The app also uses Firebase to persist chat history and enable authentication.
                             </p>
                             <ul class="languagesUsed">
                                 <li class="languageIconSmall">
@@ -162,8 +169,9 @@
                             </ul>
                             <ul class="portfolioLinks">
                                 <li>
-                                    <a href="https://github.com/paul93andrews/project5" target="external">
-                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                    <a href="https://github.com/paul93andrews/project5" target="external" class="githubRepo">
+                                        Github
+                                        <i class="devicon-github-plain" aria-hidden="true"></i>
                                         <span class="sr-only">Git Hub Icon</span>
                                     </a>
                                 </li>
@@ -177,12 +185,14 @@
         
                     <section class="portfolioContent project2">
                         <div class="portfolioImageContainer wow slideInRight">
-                            <img src="./imagesAndIcons/project-4-display.png" alt="Image of portfolio piece within computer">
+                            <a href="https://gabe-and-paul.github.io/gabePaulProject4/" target="external">
+                                <img src="./imagesAndIcons/project-4-display.png" alt="Image of portfolio piece within computer">
+                            </a>
                         </div>
                         <div class="projectDetails wow slideInLeft">
                             <h2>Have you Heard This?</h2>
                             <p class="portfolioDescription">
-                                Collaborated with a colleague to create this JQuery application. As we are both huge podcast fans, a project that enables users to explore new ones was useful for us both. The application adheres to responsive design and accessibility principles, searching a RESTful API for randomly generated podcasts given users preferences.
+                                Collaborated with a colleague to create this JQuery application. It enables users to explore podcasts. The application adheres to responsive design and accessibility principles, searching a RESTful API for random podcasts given users preferences.
                             </p>
                             <ul class="languagesUsed">
                                 <li class="languageIconSmall">
@@ -203,13 +213,14 @@
                                 </li>
                                 <li class="languageIconSmall">
                                     <i class="devicon-javascript-plain accentIcon" aria-hidden="true"></i>
-                                    <span class="sr-only">Javascript Icon</span>
+                                    <span class="sr-only">JavaScript Icon</span>
                                 </li>
                             </ul>
                             <ul class="portfolioLinks">
                                 <li>
-                                    <a href="https://github.com/Gabe-and-Paul/gabePaulProject4" target="external">
-                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                    <a href="https://github.com/Gabe-and-Paul/gabePaulProject4" target="external" class="githubRepo">
+                                        Github
+                                        <i class="devicon-github-plain" aria-hidden="true"></i>
                                         <span class="sr-only">Git Hub Icon</span>
                                     </a>
                                 </li>
@@ -223,12 +234,14 @@
         
                     <section class="portfolioContent project3">
                         <div class="portfolioImageContainer wow slideInLeft">
-                            <img src="./imagesAndIcons/project-6-display.png" alt="Image of portfolio piece within computer">
+                            <a href="https://makeupyourmind-e0283.firebaseapp.com/" target="external">
+                                <img src="./imagesAndIcons/project-6-display.png" alt="Image of portfolio piece within computer">
+                            </a>
                         </div>
                         <div class="projectDetails wow slideInRight">
                             <h2>MakeApp</h2>
                             <p class="portfolioDescription">
-                                Makeup cosmetics might not be my sort of thing, but online shopping is. This React app was created collaboratively and gives users an e-commerce experience. The application adheres to responsive design and accessibility principles, searching a RESTful API for makeup product details and giving users the option to store favourites to a Firebase database.
+                                This React app was created collaboratively and gives users an e-commerce experience. The application adheres to responsive design and accessibility principles, searching a RESTful API for makeup product details and allows users to store favourites to a database.
                             </p>
                             <ul class="languagesUsed">
                                 <li class="languageIconSmall">
@@ -254,8 +267,9 @@
                             </ul>
                             <ul class="portfolioLinks">
                                 <li>
-                                    <a href="https://github.com/Mob-Eit/makeThisUp" target="external">
-                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                    <a href="https://github.com/Mob-Eit/makeThisUp" target="external" class="githubRepo">
+                                        Github
+                                        <i class="devicon-github-plain" aria-hidden="true"></i>
                                         <span class="sr-only">Git Hub Icon</span>
                                     </a>
                                 </li>
@@ -269,7 +283,9 @@
         
                     <section class="portfolioContent project4">
                         <div class="portfolioImageContainer wow slideInRight">
-                            <img src="./imagesAndIcons/project-1-display.png" alt="Image of portfolio piece within computer">
+                            <a href="https://paul93andrews.github.io/paul-andrews-project-two/index.html" target="external">
+                                <img src="./imagesAndIcons/project-1-display.png" alt="Image of portfolio piece within computer">
+                            </a>
                         </div>
                         <div class="projectDetails wow slideInLeft">
                             <h2>Client PSD Conversion</h2>
@@ -296,8 +312,9 @@
                             </ul>
                             <ul class="portfolioLinks">
                                 <li>
-                                    <a href="https://github.com/paul93andrews/paul-andrews-project-two" target="external">
-                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                    <a href="https://github.com/paul93andrews/paul-andrews-project-two" target="external" class="githubRepo">
+                                        Github
+                                        <i class="devicon-github-plain" aria-hidden="true"></i>
                                         <span class="sr-only">Git Hub Icon</span>
                                     </a>
                                 </li>
@@ -311,12 +328,14 @@
         
                     <section class="portfolioContent project5">
                         <div class="portfolioImageContainer wow slideInLeft">
-                            <img src="./imagesAndIcons/project-3-display.png" alt="Image of portfolio piece within computer">
+                            <a href="https://paul93andrews.github.io/project3PaulAndrews/" target="external">
+                                <img src="./imagesAndIcons/project-3-display.png" alt="Image of portfolio piece within computer">
+                            </a>
                         </div>
                         <div class="projectDetails wow slideInRight">
                             <h2>Who do you Beleaf You Are?</h2>
                             <p class="portfolioDescription">
-                                Born in the Greater Toronto Area means I'm a born Toronto Maple Leafs fan. I've seen fans of all types and often wondered how to classify Leafs Nation. This application uses JQuery to do just that. Users take a quiz that follows responsive design and accessibility principles to find out what kind of fan they are. 
+                                I've lived around Toronto my whole life and often wondered how to classify Leafs fans. This application uses JQuery to do just that. Users take a quiz that follows responsive design and accessibility principles to find out what kind of fan they are. 
                             </p>
                             <ul class="languagesUsed">
                                 <li class="languageIconSmall">
@@ -342,8 +361,9 @@
                             </ul>
                             <ul class="portfolioLinks">
                                 <li>
-                                    <a href="https://github.com/paul93andrews/project3PaulAndrews" target="external">
-                                        <i class="devicon-github-plain accentIcon" aria-hidden="true"></i>
+                                    <a href="https://github.com/paul93andrews/project3PaulAndrews" target="external" class="githubRepo">
+                                        Github
+                                        <i class="devicon-github-plain" aria-hidden="true"></i>
                                         <span class="sr-only">Git Hub Icon</span>
                                     </a>
                                 </li>
@@ -359,7 +379,7 @@
         </div>
     
         <aside class="funIcon">
-            <i class="far fa-smile" aria-hidden="true"></i>
+            <i class="far fa-smile" aria-hidden="true" id="smileyIcon"></i>
             <span class="sr-only">Fun icon showing personality</span>
         </aside>
     
@@ -372,7 +392,5 @@
 <script src="/scripts/script.js"></script>
 <script type="text/javascript" src="./scripts/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-<script>
-    new WOW().init();
-</script>
+<script src="./scripts/wow.min.js"></script>
 </html>

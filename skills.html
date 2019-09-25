@@ -16,6 +16,7 @@
 <body>
     <div class="maxContainer">
         <div class="slideNav">
+            <!-- navigation available only on mobile through hamburger menu touch -->
             <ul class="mobile">
                 <li>
                     <button class="exitResponsive mobileButton">
@@ -56,6 +57,7 @@
 
         
         <aside class="socialMedia">
+            <!-- social media navigation that is accessed via touch on mobile and visible on desktop -->
             <button class="chevron">
                 <i class="fas fa-chevron-circle-right right" aria-hidden="true"></i>
                 <span class="sr-only">Click to reveal social media menu</span>
@@ -91,9 +93,12 @@
         </aside>
         
         <div class="content wrapper headerGap">
+            <!-- wrapper above constrains everything to the card appearance on the main page  -->
             <header class="wrapper">
                 <nav>
-                    <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    <a href="index.html" class="professionalLogo">
+                        <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    </a>
                     <ul class="headerNav">
                         <li class="headerMenuItems">
                             <a href="index.html" class="">
@@ -124,6 +129,7 @@
             </header>
 
             <main class="skillsPage wrapper">
+                <!-- main section is split into two skills sections, similarly formatted and styled -->
                 <section class="skills">
                     <div class="skillsDetails">
                         <h1>Skills</h1>
@@ -208,9 +214,8 @@
             </main>
         </div>
     
-    
         <aside class="funIcon">
-            <i class="far fa-smile" aria-hidden="true"></i>
+            <i class="far fa-smile" aria-hidden="true" id="smileyIcon"></i>
             <span class="sr-only">Fun icon showing personality</span>
         </aside>
     

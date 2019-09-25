@@ -354,19 +354,6 @@ img {
           filter: invert(1);
 }
 
-.skip-link {
-  position: absolute;
-  left: -1000rem;
-  top: .25rem;
-  z-index: 10;
-  color: black;
-  padding: 1rem;
-}
-
-.skip-link:focus {
-  left: 50%;
-}
-
 button,
 a {
   -webkit-transition: -webkit-transform linear .2s;
@@ -404,6 +391,7 @@ a:focus {
   .funIcon i {
     font-size: 1.5rem;
     color: black;
+    cursor: pointer;
   }
   footer {
     margin-top: 1rem;
@@ -1191,3 +1179,4 @@ ul.headerNav .headerMenuItems {
     margin: 0 auto;
   }
 }
+/*# sourceMappingURL=style.css.map */

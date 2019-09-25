@@ -1,22 +1,28 @@
 header {
+    // layout and positioning of the header nav on mobile
     nav {
         display: flex;
         justify-content: space-between;
         margin-top: 1.25rem;
         position: relative;
         padding-top: .25rem;
-        img {
+        .professionalLogo {
             width: 20%;
             flex-shrink: 0;
-            height: auto;
             position: relative;
             top: 11%;
             left: 9%;
+            &:hover,
+            &:focus {
+                // removed transform so it doesn't grow in size and animate when hovered or focused like global a tags
+                transform: none;
+            }
         }
     }
 }
 
 .slideNav {
+    // mobile navigation styling and positioning
     background: $accent;
     display: block;
     position: fixed;
@@ -46,14 +52,15 @@ header {
 }
 
 .show {
+    // toggled on to the mobile nav so that it's revealed on click of hamburger
     top: 0%;
 }
 
 .hamburger {
     position: fixed;
     right: 9%;
-    top: 5%;
-    color: $accent;
+    top: 8%;
+    color: black;
     @include generalButtonStyle;
 }
 
@@ -81,6 +88,7 @@ ul.headerNav .headerMenuItems {
 @include media(600px) {
     .slideNav,
     .hamburger {
+        // displayed none because the page has now adjusted to larger screen sizes
         display: none;
     }
 
@@ -105,7 +113,7 @@ ul.headerNav .headerMenuItems {
     }
 
     header nav {
-        img {
+        .professionalLogo {
             width: 10%;
             top: 0;
             left: 1.5%;
@@ -115,7 +123,7 @@ ul.headerNav .headerMenuItems {
 
 @include media(800px) {
     header nav {
-        img {
+        .professionalLogo {
             left: 0%;
         }
     }

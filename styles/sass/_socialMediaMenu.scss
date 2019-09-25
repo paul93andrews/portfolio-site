@@ -1,9 +1,11 @@
 .socialMedia {
+    // social media navigation menu on mobile styling and layout
     display: flex;
     align-items: center;
     position: fixed;
     top: 50%;
     bottom: 50%;
+    // made out of view
     left: -3.35rem;
     transition: left ease-in .3s;
     ul {
@@ -20,13 +22,14 @@
 
 .chevron {
     @include generalButtonStyle;
-    color: $accent;
+    color: black;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     order: 1;
 }
 
 .slideOut {
+    // class that will be applied to mobile navigation to reveal on click of chevron
     left: 0%;
 }
 
@@ -36,6 +39,7 @@
 
 @include media(800px) {
     .socialMedia {
+    // changes appearance of social media nav to be displayed fully along the side of the webpage on larger screen sizes
     display: flex;
     align-items: center;
     position: fixed;

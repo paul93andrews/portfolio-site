@@ -19,10 +19,24 @@
             color: $primaryDark;
         }
     }
+    // styling and position for the error messages on each input should a user not validate it
     .errorMessage {
-        position: relative;
-        bottom: 1.5rem;
         color: red;
+    }
+    fieldset div {
+        position: relative;
+        .errorMessage {
+            position: absolute;
+            bottom: .225rem;
+            left: .225rem;
+        }
+    }
+    .textArea {
+        position: relative;
+        .errorMessage {
+            position: relative;
+            bottom: 1rem;
+        }
     }
 }
 
@@ -32,6 +46,7 @@
         padding: 0;
         border: none;
     }
+    // some general styles on inputs and textareas
     input[type="text"],
     textarea {
         width: 100%;
@@ -70,6 +85,7 @@
 
 @include media(800px) {
     .contactPage {
+        // changing the positioning and layout of the form to adjust for larger screens
         .contactForm {
             display: flex;
             flex-direction: column;
@@ -87,6 +103,6 @@
                 align-self: center;
                 margin: 0 auto;
             }
-    }
+        }
     }
 }

@@ -15,6 +15,7 @@
 <body>
     <div class="maxContainer">
         <div class="slideNav">
+            <!-- navigation available only on mobile through hamburger menu touch -->
             <ul class="mobile">
                 <li>
                     <button class="exitResponsive mobileButton">
@@ -55,6 +56,7 @@
 
         
         <aside class="socialMedia">
+            <!-- social media navigation that is accessed via touch on mobile and visible on desktop -->
             <button class="chevron">
                 <i class="fas fa-chevron-circle-right right" aria-hidden="true"></i>
                 <span class="sr-only">Click to reveal social media menu</span>
@@ -88,10 +90,14 @@
                 </li>
             </ul>
         </aside>
+
         <div class="content wrapper mobileGap">
+            <!-- wrapper above constrains everything to the card appearance on the main page  -->
             <header class="wrapper">
                 <nav>
-                    <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    <a href="index.html" class="professionalLogo">
+                        <img src="./imagesAndIcons/personalLogo.png" alt="Professional Logo">
+                    </a>
                     <ul class="headerNav">
                         <li class="headerMenuItems">
                             <a href="#" class="currentPage">
@@ -123,12 +129,13 @@
     
             <main class="aboutPage wrapper">
                 <div class="imageContainer">
-                    <img src="./imagesAndIcons/headshot-4-porftolio.png" alt="Personal Image">
+                    <img src="./imagesAndIcons/headshot-4-portfolio-2.png" alt="Personal Image">
                 </div>
         
                 <section class="aboutMe">
                     <h1>Paul Andrews</h1>
                     <div id="identity">
+                        <!-- these are the strings that feeds the typed.js animation -->
                         <h2>Web Developer</h2>
                         <h2>Educator</h2>
                         <h2>Foodie</h2>
@@ -142,12 +149,12 @@
                 </section>
             </main>
 
-            <aside class="funIcon">
-                <i class="far fa-smile" aria-hidden="true"></i>
-                <span class="sr-only">Fun icon showing personality</span>
-            </aside>
         </div>
         
+        <aside class="funIcon">
+            <i class="far fa-smile" aria-hidden="true" id="smileyIcon"></i>
+            <span class="sr-only">Fun icon showing personality</span>
+        </aside>
     
         <footer>
             <p>Developed by Paul Andrews</p>

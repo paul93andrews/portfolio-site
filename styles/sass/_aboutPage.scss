@@ -24,6 +24,7 @@
 }
 
 .mobileGap {
+    // margin for the about page's card so it's the same as the margin applied on other cards
     margin-top: 1.25rem;
 }
 
@@ -40,6 +41,7 @@
         .aboutMe {
             flex-basis: 50%;
             position: relative;
+            // headings are positioned this way to give it the hover over image effect
             h1 {
                 width: 150%;
                 position: relative;
@@ -51,6 +53,7 @@
                 left: -25%;
             }
             p.description {
+                // adjusting width here so that paragraph could extend wrapper and allow it more size
                 text-align: left;
                 margin-left: 1rem;
                 width: 115%;
@@ -58,9 +61,6 @@
                 left: -5%;
             }
         }
-    }
-    .mobileGap {
-        margin-top: 0;
     }
 }
 

@@ -1,3 +1,4 @@
+// plug-in script that controls the behaviour of typed.js elements on page
 var typed = new Typed('#typed', {
     stringsElement: '#identity',
     loop: true,

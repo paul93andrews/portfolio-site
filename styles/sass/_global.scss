@@ -65,6 +65,7 @@ img {
 
 // general class properties
 .maxContainer {
+    // contains everything in large displays
     max-width: 2500px;
     margin: 0 auto;
     min-height: 100vh;
@@ -75,12 +76,14 @@ img {
 }
 
 .content {
+    // sets the styling for the card appearance on each html page
     background: $primaryLight;
     border-radius: 2rem;
     box-shadow: 0px 0px 10px 5px #951920e6;
 }
 
 .wrapper {
+    // main wrapper for constraining elements within the card
     margin: 0 auto;
     width: 95%;
     max-width: 1500px;
@@ -94,23 +97,19 @@ img {
     display: none;
 }
 
+.flip-vertical-right {
+    // plug-in styling for the fun icon flip on click
+	-webkit-animation: flip-vertical-right 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    animation: flip-vertical-right 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
 .accentIcon {
     color: $primaryDark;
 }
 
-// screen reader accessibility links properties
-.skip-link {
-    position: absolute;
-    left: -1000rem;
-    top: .25rem;
-    z-index: 10;
-    // background: $primaryBright;
-    color: black;
-    padding: 1rem;
-}
-
-.skip-link:focus {
-    left: 50%;
+.inverseColors {
+    // inverts the colours of the sections its applied to when fun icon is clicked
+    filter: invert(1);
 }
 
 //some general hover states 
@@ -142,10 +141,11 @@ a:focus {
         top: 50%;
         bottom: 50%;
         right: 2%;
+        transform: rotate(270deg);
         i {
-            transform: rotate(270deg);
             font-size: 1.5rem;
             color: black;
+            cursor: pointer;
         }
     }
 
@@ -159,6 +159,6 @@ a:focus {
         box-shadow: 0px 3px 18px 8px #951920e6;
     }
     .funIcon {
-        right: 2.5%;
+        right: 3.5%;
     }
 }

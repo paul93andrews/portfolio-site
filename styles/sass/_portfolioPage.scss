@@ -1,6 +1,8 @@
 .portfolioPage {
+    // padding at the top of the section and bottom, after the header and before the card's closing
     padding: 2rem .5rem;
     .portfolioContent {
+        // separates each of the portfolio pieces
         border-bottom: .15rem solid $accent;
     }
     .project5 {
@@ -8,15 +10,21 @@
     }
     .portfolioImageContainer {
         padding-top: 2rem;
+        a:hover,
+        a:focus {
+            transform: none;
+        }
     }
     p.portfolioDescription {
         text-align: center;
         font-size: .9rem;
+        line-height: 1.2rem;
     }
     h1 {
         margin-bottom: 1rem;
     }
     h2 {
+        margin-top: 1.25rem;
         margin-bottom: .75rem;
     }
     ul {
@@ -38,7 +46,9 @@
             align-items: center;
             justify-content: center;
         }
-        .liveSite {
+        .liveSite,
+        .githubRepo {
+            // blue buttons as they appear on the web page, very similarly styled but different widths as styled below
             color: white;
             background: $accent;
             width: 8.5rem;
@@ -47,6 +57,9 @@
             border: .1rem solid $accent;
             transition: background ease .2s;
             text-align: center;
+            i {
+                font-size: 1rem;
+            }
             &:hover,
             &:focus {
                 background: $primaryDark;
@@ -56,12 +69,17 @@
                 transform: scale(.95);
             }
         }
+        .githubRepo {
+            // together their margins create a 1rem gap between them at mobile display
+            margin-right: .5rem;
+            width: 6.25rem;
+        }
+        .liveSite {
+            margin-left: .5rem;
+        }
     }
     i {
         font-size: 1.75rem;
-    }
-    i.external {
-        font-size: 1rem;
     }
 }
 
@@ -69,7 +87,7 @@
     margin-bottom: 0;
 }
 
-@include media(900px) {
+@include media(950px) {
     .portfolioPage {
         padding-bottom: 0;
         .portfolioContent {
@@ -79,42 +97,54 @@
             padding: 2.5rem 0;
             .portfolioImageContainer,
             .projectDetails {
-                flex-basis: 50%;
+                flex-basis: 47.5%;
             }
             ul {
                 flex-basis: 100%;
                 margin-bottom: .25rem;
                 li {
                     flex-basis: 12.5%;
+                    .githubRepo {
+                        margin-right: .125rem;
+                    }
+                    .liveSite {
+                        margin-left: .125rem;
+                    }
                 }
+            }
+            h2 {
+                margin-top: 0;
             }
             .portfolioImageContainer {
                 align-self: center;
+                padding-top: 0;
             }
             .portfolioLinks {
                 margin-bottom: 0;
-            }
-            .liveSite {
-                margin-left: .75rem;
+                flex-wrap: wrap;
             }
         }
     }
 
-
     .project1,
     .project3,
     .project5 {
+        // separate positioning styling for odd numbered portfolio sections
         h2,
         p.portfolioDescription {
             text-align: left;
         }
         ul {
             justify-content: flex-start;
+            li {
+                text-align: left;
+            }
         }
     }
 
     .project2,
     .project4 {
+        // separate positioning styling for even numbered portfolio sections
         .projectDetails {
             order: -1;
         }
@@ -132,7 +162,11 @@
 }
 
 @include media(1050px) {
+    // ensures that each of the items in the containers are tight to the top of their portfolio sections, ensures they're level
     .portfolioContent {
-        align-items: center;
+        align-items: flex-start;
+        .portfolioImageContainer {
+            align-self: flex-start;
+        }
     }
 }
