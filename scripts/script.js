@@ -33,8 +33,9 @@ portfolio.mobileNav = () => {
 
     portfolio.mobileButtons.forEach(function (elem) {
         elem.addEventListener("click", function () {
-            // listens for click on elements with class of mobile button and then toggles the slide nav to show the mobile menu directory
+            // listens for click on elements with class of mobile button and then toggles the slide nav to show the mobile menu directory. Also disables the scroll so slide nav is functional
             document.querySelector('.slideNav').classList.toggle('show');
+            document.documentElement.classList.toggle('noScroll');
         });
     });
 

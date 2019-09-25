@@ -58,6 +58,7 @@ header {
 
 .hamburger {
     position: fixed;
+    z-index: 9;
     right: 9%;
     top: 8%;
     color: black;

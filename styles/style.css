@@ -332,6 +332,10 @@ img {
   max-width: 1500px;
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 .headerGap {
   margin-top: 1.25rem;
 }
@@ -352,19 +356,6 @@ img {
 .inverseColors {
   -webkit-filter: invert(1);
           filter: invert(1);
-}
-
-.skip-link {
-  position: absolute;
-  left: -1000rem;
-  top: .25rem;
-  z-index: 10;
-  color: black;
-  padding: 1rem;
-}
-
-.skip-link:focus {
-  left: 50%;
 }
 
 button,
@@ -404,6 +395,7 @@ a:focus {
   .funIcon i {
     font-size: 1.5rem;
     color: black;
+    cursor: pointer;
   }
   footer {
     margin-top: 1rem;
@@ -488,6 +480,7 @@ header nav .professionalLogo:hover, header nav .professionalLogo:focus {
 
 .hamburger {
   position: fixed;
+  z-index: 9;
   right: 9%;
   top: 8%;
   color: black;
@@ -610,6 +603,7 @@ ul.headerNav .headerMenuItems {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  z-index: 8;
 }
 
 .slideOut {
