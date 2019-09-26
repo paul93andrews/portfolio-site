@@ -7,6 +7,9 @@
     p.contactDetails {
         margin-bottom: .75rem;
     }
+    li {
+        font-size: .8rem;
+    }
     ul a {
         transform: none;
         color: black;
@@ -79,6 +82,14 @@
         }
         &:active {
             transform: scale(.95);
+        }
+    }
+}
+
+@include media(400px) {
+    .contactPage {
+        li {
+            font-size: .925rem;
         }
     }
 }

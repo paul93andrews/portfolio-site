@@ -813,6 +813,13 @@ ul.headerNav .headerMenuItems {
 
 .portfolioPage .portfolioLinks {
   margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .portfolioPage .portfolioLinks li {
@@ -825,6 +832,10 @@ ul.headerNav .headerMenuItems {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.portfolioPage .portfolioLinks li:nth-of-type(2) {
+  margin-top: .5rem;
 }
 
 .portfolioPage .portfolioLinks .liveSite,
@@ -860,12 +871,7 @@ ul.headerNav .headerMenuItems {
 }
 
 .portfolioPage .portfolioLinks .githubRepo {
-  margin-right: .5rem;
   width: 6.25rem;
-}
-
-.portfolioPage .portfolioLinks .liveSite {
-  margin-left: .5rem;
 }
 
 .portfolioPage i {
@@ -874,6 +880,24 @@ ul.headerNav .headerMenuItems {
 
 .project5 .portfolioLinks {
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 400px) {
+  .portfolioPage .portfolioLinks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .portfolioPage .portfolioLinks li:nth-of-type(2) {
+    margin-top: 0;
+  }
+  .portfolioPage .portfolioLinks .githubRepo {
+    margin-right: .5rem;
+  }
+  .portfolioPage .portfolioLinks .liveSite {
+    margin-left: .5rem;
+  }
 }
 
 @media only screen and (min-width: 950px) {
@@ -1059,6 +1083,10 @@ ul.headerNav .headerMenuItems {
   margin-bottom: .75rem;
 }
 
+.contactPage li {
+  font-size: .8rem;
+}
+
 .contactPage ul a {
   -webkit-transform: none;
           transform: none;
@@ -1147,6 +1175,12 @@ ul.headerNav .headerMenuItems {
 .contactForm input[type=submit]:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+@media only screen and (min-width: 400px) {
+  .contactPage li {
+    font-size: .925rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {

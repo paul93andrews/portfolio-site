@@ -41,10 +41,15 @@
     }
     .portfolioLinks {
         margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
         li {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        li:nth-of-type(2) {
+            margin-top: .5rem
         }
         .liveSite,
         .githubRepo {
@@ -70,12 +75,7 @@
             }
         }
         .githubRepo {
-            // together their margins create a 1rem gap between them at mobile display
-            margin-right: .5rem;
             width: 6.25rem;
-        }
-        .liveSite {
-            margin-left: .5rem;
         }
     }
     i {
@@ -85,6 +85,22 @@
 
 .project5 .portfolioLinks {
     margin-bottom: 0;
+}
+
+@include media(400px) {
+    .portfolioPage .portfolioLinks {
+        flex-direction: row;
+        li:nth-of-type(2){
+            margin-top: 0;
+        }
+        .githubRepo {
+            // together their margins create a 1rem gap between them at mobile display
+            margin-right: .5rem;
+        }
+        .liveSite {
+            margin-left: .5rem;
+        }
+    }
 }
 
 @include media(950px) {
