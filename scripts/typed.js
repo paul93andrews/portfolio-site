@@ -5,5 +5,4 @@ var typed = new Typed('#typed', {
     loopCount: Infinity,
     typeSpeed: 50,
     backSpeed: 75,
-    mobile: false
 });
