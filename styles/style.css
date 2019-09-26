@@ -577,6 +577,7 @@ ul.headerNav .headerMenuItems {
   left: -3.35rem;
   -webkit-transition: left ease-in .3s;
   transition: left ease-in .3s;
+  z-index: 7;
 }
 
 .socialMedia ul {

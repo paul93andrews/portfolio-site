@@ -8,6 +8,7 @@
     // made out of view
     left: -3.35rem;
     transition: left ease-in .3s;
+    z-index: 7;
     ul {
         background: $accent;
         border-radius: .5rem;
