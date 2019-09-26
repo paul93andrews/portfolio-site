@@ -592,6 +592,10 @@ ul.headerNav .headerMenuItems {
   color: white;
 }
 
+.socialMedia ul i.fab:last-of-type {
+  margin-bottom: .75rem;
+}
+
 .chevron {
   border: none;
   border-radius: .5rem;
@@ -609,6 +613,10 @@ ul.headerNav .headerMenuItems {
 
 .slideOut {
   left: 0%;
+}
+
+.left {
+  color: #253769;
 }
 
 .hide {

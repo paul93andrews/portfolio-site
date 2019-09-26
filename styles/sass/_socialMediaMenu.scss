@@ -18,6 +18,9 @@
             padding: .25rem;
             color: white;
         }
+        i.fab:last-of-type {
+            margin-bottom: .75rem;
+        }
     }
 }
 
@@ -33,6 +36,10 @@
 .slideOut {
     // class that will be applied to mobile navigation to reveal on click of chevron
     left: 0%;
+}
+
+.left {
+    color: $accent;
 }
 
 .hide {
