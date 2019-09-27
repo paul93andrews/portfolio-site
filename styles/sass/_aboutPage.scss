@@ -1,6 +1,7 @@
 .imageContainer {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
     img {
         width: 80%;
         border-radius: 50%;
@@ -35,6 +36,7 @@
         .imageContainer{
             flex-basis: 45%;
             align-self: center;
+            margin-top: 0;
             img {
                 width: 100%;
             }
@@ -89,7 +91,7 @@
         .aboutMe {
             padding-top: 5rem;
             h1 {
-                left: -30%;
+                left: -20%;
             }
             h2 {
                 left: -7.5%;

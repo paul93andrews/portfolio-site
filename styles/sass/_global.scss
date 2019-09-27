@@ -46,6 +46,14 @@ li,
 input::placeholder {
     font-size: .925rem;
     line-height: 1.6rem;
+}
+
+p,
+input::placeholder {
+    letter-spacing: .085rem;
+}
+
+li {
     letter-spacing: .125rem;
 }
 
